@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #f6f3ee;
+    color: #1c1917;
+}
+
+:root:has(
+        :is(
+                .modal-open,
+                .modal:target,
+                .modal-toggle:checked + .modal,
+                .modal[open]
+            )
+    ) {
+    scrollbar-gutter: auto;
+}
